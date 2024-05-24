@@ -11,21 +11,58 @@ npm install rn-nomba-terminal-actions
 ## Usage
 
 ```js
-import { multiply } from 'rn-nomba-terminal-actions';
+import { handleTerminalRequest } from 'rn-nomba-terminal-actions';
 
 // ...
 
-const result = await multiply(3, 7);
+type responseMap = {
+  [key: string]: string;
+};
+
+const [result, setResult] = React.useState<any>();
+
+  function isErrorWithMessage(error: any): error is { message: string } {
+    return error && typeof error.message === 'string';
+  }
+
+  const getAmount = (amount: string) => {
+    const amountInCents = parseInt(amount, 10);
+
+    if (isNaN(amountInCents)) {
+      console.error('Invalid amount entered.');
+      return undefined;
+    }
+
+    return amountInCents.toString();
+  };
+
+  const onHandleTerminalRequest = async (action: string) => {
+    try {
+      var receiptData = {
+        email: false,
+        sms: true,
+        print: true,
+      };
+
+      let amount: string | undefined = getAmount('2');
+
+      if (amount !== undefined) {
+        const res: responseMap = await handleTerminalRequest([
+          action,
+          amount,
+          '1234567890',
+          JSON.stringify(receiptData),
+        ]);
+
+        setResult(res.result);
+      }
+    } catch (e: any) {
+      if (isErrorWithMessage(e)) {
+        setResult(e.message);
+      } else {
+        setResult(e);
+      }
+    }
+  };
+
 ```
-
-## Contributing
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
-## License
-
-MIT
-
----
-
-Made with [create-react-native-library](https://github.com/callstack/react-native-builder-bob)
