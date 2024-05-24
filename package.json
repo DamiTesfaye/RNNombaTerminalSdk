@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DamiTesfaye/rn-nomba-terminal-actions.git"
+    "url": "git+https://github.com/DamiTesfaye/RNNombaTerminalActions.git"
   },
   "author": "John Tesfaye <damiTesfaye@gmail.com> (https://github.com/DamiTesfaye)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DamiTesfaye/rn-nomba-terminal-actions/issues"
+    "url": "https://github.com/DamiTesfaye/RNNombaTerminalActions.git/issues"
   },
-  "homepage": "https://github.com/DamiTesfaye/rn-nomba-terminal-actions#readme",
+  "homepage": "https://github.com/DamiTesfaye/RNNombaTerminalActions#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },
