@@ -62,7 +62,7 @@ export default function App() {
       </Text>
       <View style={styles.buttonContainer}>
         <Button
-          onPress={() => onHandleTerminalRequest('triggerCardPayment')}
+          onPress={() => onHandleTerminalRequest('card_payment_action')}
           title="Run Card Payment Action"
           color="#841584"
           accessibilityLabel="Run card payment button"
@@ -70,7 +70,7 @@ export default function App() {
       </View>
       <View style={styles.buttonContainer}>
         <Button
-          onPress={() => onHandleTerminalRequest('triggerPayByTransfer')}
+          onPress={() => onHandleTerminalRequest('pay_by_transfer_action')}
           title="Run Pay by Transfer Action"
           color="#841584"
           accessibilityLabel="Run pay by transfer button"
@@ -78,7 +78,7 @@ export default function App() {
       </View>
       <View style={styles.buttonContainer}>
         <Button
-          onPress={() => onHandleTerminalRequest('triggerCardAndPBT')}
+          onPress={() => onHandleTerminalRequest('card_payment_and_PBT_action')}
           title="Run Pay by Card + Transfer Action"
           color="#841584"
           accessibilityLabel="Run pay by transfer button"

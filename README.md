@@ -66,3 +66,9 @@ const [result, setResult] = React.useState<any>();
   };
 
 ```
+
+|       ACTIONS |VALUES                          |PROPERTIES                         |
+|----------------|-------------------------------|-----------------------------|
+|Card Payments|`card_payment_action`            |[`card_payment_action`, amount, merchantReference, receiptData]            |
+|Pay by Transfer         |`pay_by_transfer_action`            |[`pay_by_transfer_action`, amount, merchantReference, receiptData]           |
+|Card Payments & Pay by Transfers          |`card_payment_and_PBT_action`|[`card_payment_and_PBT_action`, amount, merchantReference, receiptData]|

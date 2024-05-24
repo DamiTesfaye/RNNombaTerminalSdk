@@ -62,27 +62,27 @@ public class RnNombaTerminalActionsModule extends ReactContextBaseJavaModule imp
 
     final var actionKey = args.getString(0);
     final var isPayment = !Objects.equals(actionKey,
-      "triggerPrintCustomReceipt") && !Objects.equals(
+      "print_custom_receipt_action") && !Objects.equals(
       actionKey,
-      "getDeviceInfo");
+      "get_device_info_action");
     final var amount = isPayment ? args.getString(1) : "";
     final var transactionReference = isPayment ? args.getString(2) : "";
     final var receiptData = isPayment ? args.getString(3) : "";
 
     switch (actionKey) {
-      case "triggerCardPayment":
+      case "card_payment_action":
         this.triggerPayment(CARD_PAYMENT, amount, transactionReference, receiptData);
         break;
-      case "triggerPayByTransfer":
+      case "pay_by_transfer_action":
         this.triggerPayment(PAY_BY_TRANSFER_INTENT,
           amount,
           transactionReference,
           receiptData);
         break;
-      case "triggerCardAndPBT":
+      case "card_payment_and_PBT_action":
         this.triggerCardAndPBT(amount, transactionReference, receiptData);
         break;
-      case "triggerPrintCustomReceipt":
+      case "print_custom_receipt_action":
         this.triggerPrintCustomReceipt(args.getString(1), args.getString(2));
         break;
       default:
