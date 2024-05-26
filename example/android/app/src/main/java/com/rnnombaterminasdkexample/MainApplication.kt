@@ -1,4 +1,4 @@
-package com.rnnombaterminalactionsexample
+package com.rnnombaterminalsdkexample
 
 import android.app.Application
 import com.facebook.react.PackageList

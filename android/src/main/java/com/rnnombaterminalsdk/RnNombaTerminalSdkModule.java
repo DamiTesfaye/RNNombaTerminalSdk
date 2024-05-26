@@ -1,4 +1,4 @@
-package com.rnnombaterminalactions;
+package com.rnnombaterminalsdk;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -24,10 +24,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Objects;
 
-@ReactModule(name = RnNombaTerminalActionsModule.NAME)
-public class RnNombaTerminalActionsModule extends ReactContextBaseJavaModule implements ActivityEventListener {
+@ReactModule(name = RnNombaTerminalSdkModule.NAME)
+public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule implements ActivityEventListener {
   private Promise mPromise;
-  public static final String NAME = "RnNombaTerminalActions";
+  public static final String NAME = "RnNombaTerminalSdk";
   private static final int ARGS_TRANSACTION_REQUEST_CODE = 1943;
   private static final int ARGS_PRINT_RECEIPT_EVENT = 1944;
   private static final String AMOUNT_DATA = "amount";
@@ -44,7 +44,7 @@ public class RnNombaTerminalActionsModule extends ReactContextBaseJavaModule imp
   private static final String ARGS_PRINT_DATA = "ARGS_PRINT_DATA";
   private static final String ARGS_PRINT_BITMAP_DATA = "ARGS_PRINT_BITMAP_DATA";
 
-  public RnNombaTerminalActionsModule(ReactApplicationContext reactContext) {
+  public RnNombaTerminalSdkModule(ReactApplicationContext reactContext) {
     super(reactContext);
 
     reactContext.addActivityEventListener(this);
@@ -205,27 +205,27 @@ public class RnNombaTerminalActionsModule extends ReactContextBaseJavaModule imp
     if (i == ARGS_TRANSACTION_REQUEST_CODE) {
       if (i1 == Activity.RESULT_OK) {
         if (intent != null) {
-          RnNombaTerminalActionsModule.this.handleResponse(intent.getStringExtra(TXN_RESULT) != null ? intent.getStringExtra(
+          RnNombaTerminalSdkModule.this.handleResponse(intent.getStringExtra(TXN_RESULT) != null ? intent.getStringExtra(
               TXN_RESULT) : "Empty result",
             "success");
         } else {
-          RnNombaTerminalActionsModule.this.handleResponse("action failed to complete",
+          RnNombaTerminalSdkModule.this.handleResponse("action failed to complete",
             "failed");
         }
       } else if (i1 == Activity.RESULT_CANCELED) {
         if (intent != null) {
-          RnNombaTerminalActionsModule.this.handleResponse(intent.getStringExtra(TXN_RESULT) != null ? intent.getStringExtra(
+          RnNombaTerminalSdkModule.this.handleResponse(intent.getStringExtra(TXN_RESULT) != null ? intent.getStringExtra(
               TXN_RESULT) : "Empty result",
             "transactionCancelled");
         } else {
-          RnNombaTerminalActionsModule.this.handleResponse("action failed to complete",
+          RnNombaTerminalSdkModule.this.handleResponse("action failed to complete",
             "failed");
         }
       } else {
-        RnNombaTerminalActionsModule.this.handleResponse("action failed to complete", "failed");
+        RnNombaTerminalSdkModule.this.handleResponse("action failed to complete", "failed");
       }
     } else {
-      RnNombaTerminalActionsModule.this.handleResponse("action failed to complete", "failed");
+      RnNombaTerminalSdkModule.this.handleResponse("action failed to complete", "failed");
     }
   }
 

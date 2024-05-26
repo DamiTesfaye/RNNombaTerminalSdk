@@ -1,6 +1,6 @@
 //
 //  File.swift
-//  RnNombaTerminalActionsExample
+//  RnNombaTerminalSdkExample
 //
 
 import Foundation

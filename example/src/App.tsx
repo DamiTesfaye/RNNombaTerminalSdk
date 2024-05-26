@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { StyleSheet, View, Text, Button } from 'react-native';
-import { handleTerminalRequest } from 'rn-nomba-terminal-actions';
+import { handleTerminalRequest } from 'rn-nomba-terminal-sdk';
 
 type responseMap = {
   [key: string]: string;

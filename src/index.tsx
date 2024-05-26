@@ -1,13 +1,13 @@
 import { NativeModules, Platform } from 'react-native';
 
 const LINKING_ERROR =
-  `The package 'rn-nomba-terminal-actions' doesn't seem to be linked. Make sure: \n\n` +
+  `The package 'rn-nomba-terminal-sdk' doesn't seem to be linked. Make sure: \n\n` +
   Platform.select({ ios: "- You have run 'pod install'\n", default: '' }) +
   '- You rebuilt the app after installing the package\n' +
   '- You are not using Expo Go\n';
 
-const RnNombaTerminalActions = NativeModules.RnNombaTerminalActions
-  ? NativeModules.RnNombaTerminalActions
+const RnNombaTerminalSdk = NativeModules.RnNombaTerminalSdk
+  ? NativeModules.RnNombaTerminalSdk
   : new Proxy(
       {},
       {
@@ -18,5 +18,5 @@ const RnNombaTerminalActions = NativeModules.RnNombaTerminalActions
     );
 
 export function handleTerminalRequest(args: Array<string>): Promise<any> {
-  return RnNombaTerminalActions.handleTerminalRequest(args);
+  return RnNombaTerminalSdk.handleTerminalRequest(args);
 }

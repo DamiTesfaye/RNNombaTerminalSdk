@@ -1,6 +1,6 @@
-#import "RnNombaTerminalActions.h"
+#import "RnNombaTerminalSdk.h"
 
-@implementation RnNombaTerminalActions
+@implementation RnNombaTerminalSdk
 RCT_EXPORT_MODULE()
 
 // Example method

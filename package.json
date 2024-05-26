@@ -1,7 +1,7 @@
 {
-  "name": "rn-nomba-terminal-actions",
-  "version": "0.1.0",
-  "description": "React Native module for Nomba terminal actions",
+  "name": "rn-nomba-terminal-sdk",
+  "version": "0.1.1",
+  "description": "React Native module for Nomba terminal SDK actions",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
@@ -26,7 +26,7 @@
     "!**/.*"
   ],
   "scripts": {
-    "example": "yarn workspace rn-nomba-terminal-actions-example",
+    "example": "yarn workspace rn-nomba-terminal-sdk-example",
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
@@ -41,14 +41,14 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/DamiTesfaye/RNNombaTerminalActions.git"
+    "url": "git+https://github.com/DamiTesfaye/RNNombaTerminalSdk.git"
   },
   "author": "John Tesfaye <damiTesfaye@gmail.com> (https://github.com/DamiTesfaye)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/DamiTesfaye/RNNombaTerminalActions.git/issues"
+    "url": "https://github.com/DamiTesfaye/RNNombaTerminalSdk.git/issues"
   },
-  "homepage": "https://github.com/DamiTesfaye/RNNombaTerminalActions#readme",
+  "homepage": "https://github.com/DamiTesfaye/RNNombaTerminalSdk#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

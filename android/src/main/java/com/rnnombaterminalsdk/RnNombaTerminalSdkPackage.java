@@ -1,4 +1,4 @@
-package com.rnnombaterminalactions;
+package com.rnnombaterminalsdk;
 
 import androidx.annotation.NonNull;
 
@@ -11,12 +11,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class RnNombaTerminalActionsPackage implements ReactPackage {
+public class RnNombaTerminalSdkPackage implements ReactPackage {
   @NonNull
   @Override
   public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
     List<NativeModule> modules = new ArrayList<>();
-    modules.add(new RnNombaTerminalActionsModule(reactContext));
+    modules.add(new RnNombaTerminalSdkModule(reactContext));
     return modules;
   }
 

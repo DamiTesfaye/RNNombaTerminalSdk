@@ -7,13 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* RnNombaTerminalActionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnNombaTerminalActionsExampleTests.m */; };
-		0C80B921A6F3F58F76C31292 /* libPods-RnNombaTerminalActionsExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-RnNombaTerminalActionsExample.a */; };
+		00E356F31AD99517003FC87E /* RnNombaTerminalSdkExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RnNombaTerminalSdkExampleTests.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		7699B88040F8A987B510C191 /* libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a */; };
+		17B77F13A96AA4F8F356E312 /* libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 581A794CCECEACB502B20C5A /* libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a */; };
+		814653F1D49B71DA02DF6A8D /* libPods-RnNombaTerminalSdkExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B64DE5B7772511E8BE7E959 /* libPods-RnNombaTerminalSdkExample.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		A6E84B9076488D57005E8989 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 884B9E95EA66997239FFD344 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -22,28 +23,29 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = RnNombaTerminalActionsExample;
+			remoteInfo = RnNombaTerminalSdkExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00E356EE1AD99517003FC87E /* RnNombaTerminalActionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnNombaTerminalActionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* RnNombaTerminalSdkExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RnNombaTerminalSdkExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* RnNombaTerminalActionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RnNombaTerminalActionsExampleTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* RnNombaTerminalActionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RnNombaTerminalActionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RnNombaTerminalActionsExample/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RnNombaTerminalActionsExample/AppDelegate.mm; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RnNombaTerminalActionsExample/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RnNombaTerminalActionsExample/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RnNombaTerminalActionsExample/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RnNombaTerminalActionsExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		19F6CBCC0A4E27FBF8BF4A61 /* libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B4392A12AC88292D35C810B /* Pods-RnNombaTerminalActionsExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalActionsExample.debug.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-RnNombaTerminalActionsExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalActionsExample.release.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample.release.xcconfig"; sourceTree = "<group>"; };
-		5B7EB9410499542E8C5724F5 /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DCACB8F33CDC322A6C60F78 /* libPods-RnNombaTerminalActionsExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnNombaTerminalActionsExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RnNombaTerminalActionsExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		89C6BE57DB24E9ADA2F236DE /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.release.xcconfig"; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* RnNombaTerminalSdkExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RnNombaTerminalSdkExampleTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* RnNombaTerminalSdkExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RnNombaTerminalSdkExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = RnNombaTerminalSdkExample/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = RnNombaTerminalSdkExample/AppDelegate.mm; sourceTree = "<group>"; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RnNombaTerminalSdkExample/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = RnNombaTerminalSdkExample/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = RnNombaTerminalSdkExample/main.m; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = RnNombaTerminalSdkExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		4A7051644874AAC3FD290210 /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
+		581A794CCECEACB502B20C5A /* libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61681CCE51B29D53F196BB6F /* Pods-RnNombaTerminalSdkExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalSdkExample.release.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample.release.xcconfig"; sourceTree = "<group>"; };
+		7B9E2214ACF9CE14ADEDB485 /* Pods-RnNombaTerminalSdkExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalSdkExample.debug.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample.debug.xcconfig"; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = RnNombaTerminalSdkExample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		884B9E95EA66997239FFD344 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = RnNombaTerminalSdkExample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		8B64DE5B7772511E8BE7E959 /* libPods-RnNombaTerminalSdkExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RnNombaTerminalSdkExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBEE59A86F3A5F2F3DBDD54D /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.release.xcconfig"; path = "Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -52,7 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7699B88040F8A987B510C191 /* libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a in Frameworks */,
+				17B77F13A96AA4F8F356E312 /* libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,20 +62,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C80B921A6F3F58F76C31292 /* libPods-RnNombaTerminalActionsExample.a in Frameworks */,
+				814653F1D49B71DA02DF6A8D /* libPods-RnNombaTerminalSdkExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* RnNombaTerminalActionsExampleTests */ = {
+		00E356EF1AD99517003FC87E /* RnNombaTerminalSdkExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* RnNombaTerminalActionsExampleTests.m */,
+				00E356F21AD99517003FC87E /* RnNombaTerminalSdkExampleTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = RnNombaTerminalActionsExampleTests;
+			path = RnNombaTerminalSdkExampleTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -84,7 +86,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* RnNombaTerminalActionsExample */ = {
+		13B07FAE1A68108700A75B9A /* RnNombaTerminalSdkExample */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -94,18 +96,31 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
+				884B9E95EA66997239FFD344 /* PrivacyInfo.xcprivacy */,
 			);
-			name = RnNombaTerminalActionsExample;
+			name = RnNombaTerminalSdkExample;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				5DCACB8F33CDC322A6C60F78 /* libPods-RnNombaTerminalActionsExample.a */,
-				19F6CBCC0A4E27FBF8BF4A61 /* libPods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.a */,
+				8B64DE5B7772511E8BE7E959 /* libPods-RnNombaTerminalSdkExample.a */,
+				581A794CCECEACB502B20C5A /* libPods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B897268356A2F0866E7F4DE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B9E2214ACF9CE14ADEDB485 /* Pods-RnNombaTerminalSdkExample.debug.xcconfig */,
+				61681CCE51B29D53F196BB6F /* Pods-RnNombaTerminalSdkExample.release.xcconfig */,
+				4A7051644874AAC3FD290210 /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.debug.xcconfig */,
+				DBEE59A86F3A5F2F3DBDD54D /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -118,12 +133,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* RnNombaTerminalActionsExample */,
+				13B07FAE1A68108700A75B9A /* RnNombaTerminalSdkExample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* RnNombaTerminalActionsExampleTests */,
+				00E356EF1AD99517003FC87E /* RnNombaTerminalSdkExampleTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				4B897268356A2F0866E7F4DE /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -133,66 +148,55 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* RnNombaTerminalActionsExample.app */,
-				00E356EE1AD99517003FC87E /* RnNombaTerminalActionsExampleTests.xctest */,
+				13B07F961A680F5B00A75B9A /* RnNombaTerminalSdkExample.app */,
+				00E356EE1AD99517003FC87E /* RnNombaTerminalSdkExampleTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3B4392A12AC88292D35C810B /* Pods-RnNombaTerminalActionsExample.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-RnNombaTerminalActionsExample.release.xcconfig */,
-				5B7EB9410499542E8C5724F5 /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.debug.xcconfig */,
-				89C6BE57DB24E9ADA2F236DE /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* RnNombaTerminalActionsExampleTests */ = {
+		00E356ED1AD99517003FC87E /* RnNombaTerminalSdkExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnNombaTerminalActionsExampleTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnNombaTerminalSdkExampleTests" */;
 			buildPhases = (
-				A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */,
+				98D4BFBBC83901B4188E7F19 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */,
-				F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */,
+				8492B5CF8239DA32446C03B9 /* [CP] Embed Pods Frameworks */,
+				E484231A8E543C29475A43E4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = RnNombaTerminalActionsExampleTests;
-			productName = RnNombaTerminalActionsExampleTests;
-			productReference = 00E356EE1AD99517003FC87E /* RnNombaTerminalActionsExampleTests.xctest */;
+			name = RnNombaTerminalSdkExampleTests;
+			productName = RnNombaTerminalSdkExampleTests;
+			productReference = 00E356EE1AD99517003FC87E /* RnNombaTerminalSdkExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* RnNombaTerminalActionsExample */ = {
+		13B07F861A680F5B00A75B9A /* RnNombaTerminalSdkExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnNombaTerminalActionsExample" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnNombaTerminalSdkExample" */;
 			buildPhases = (
-				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
+				897636FF9422B0D836B5302A /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
-				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				86BB8293285C3EA401804D1B /* [CP] Embed Pods Frameworks */,
+				7D02F5993E1A12D668EE9BB0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RnNombaTerminalActionsExample;
-			productName = RnNombaTerminalActionsExample;
-			productReference = 13B07F961A680F5B00A75B9A /* RnNombaTerminalActionsExample.app */;
+			name = RnNombaTerminalSdkExample;
+			productName = RnNombaTerminalSdkExample;
+			productReference = 13B07F961A680F5B00A75B9A /* RnNombaTerminalSdkExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -212,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnNombaTerminalActionsExample" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnNombaTerminalSdkExample" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -225,8 +229,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* RnNombaTerminalActionsExample */,
-				00E356ED1AD99517003FC87E /* RnNombaTerminalActionsExampleTests */,
+				13B07F861A680F5B00A75B9A /* RnNombaTerminalSdkExample */,
+				00E356ED1AD99517003FC87E /* RnNombaTerminalSdkExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +249,7 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				A6E84B9076488D57005E8989 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,24 +272,58 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n";
 		};
-		00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */ = {
+		7D02F5993E1A12D668EE9BB0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Embed Pods Frameworks";
+			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A55EABD7B0C7F3A422A6CC61 /* [CP] Check Pods Manifest.lock */ = {
+		8492B5CF8239DA32446C03B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86BB8293285C3EA401804D1B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample/Pods-RnNombaTerminalSdkExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		897636FF9422B0D836B5302A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -299,14 +338,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnNombaTerminalSdkExample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
+		98D4BFBBC83901B4188E7F19 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,62 +360,28 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RnNombaTerminalActionsExample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C59DA0FBD6956966B86A3779 /* [CP] Embed Pods Frameworks */ = {
+		E484231A8E543C29475A43E4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E235C05ADACE081382539298 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample/Pods-RnNombaTerminalActionsExample-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6A41C54EA430FDDC6A6ED99 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests/Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests/Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -386,7 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* RnNombaTerminalActionsExampleTests.m in Sources */,
+				00E356F31AD99517003FC87E /* RnNombaTerminalSdkExampleTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +409,7 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* RnNombaTerminalActionsExample */;
+			target = 13B07F861A680F5B00A75B9A /* RnNombaTerminalSdkExample */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -412,14 +417,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.debug.xcconfig */;
+			baseConfigurationReference = 4A7051644874AAC3FD290210 /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = RnNombaTerminalActionsExampleTests/Info.plist;
+				INFOPLIST_FILE = RnNombaTerminalSdkExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -433,17 +438,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnNombaTerminalActionsExample.app/RnNombaTerminalActionsExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnNombaTerminalSdkExample.app/RnNombaTerminalSdkExample";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-RnNombaTerminalActionsExample-RnNombaTerminalActionsExampleTests.release.xcconfig */;
+			baseConfigurationReference = DBEE59A86F3A5F2F3DBDD54D /* Pods-RnNombaTerminalSdkExample-RnNombaTerminalSdkExampleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = RnNombaTerminalActionsExampleTests/Info.plist;
+				INFOPLIST_FILE = RnNombaTerminalSdkExampleTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,19 +462,19 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnNombaTerminalActionsExample.app/RnNombaTerminalActionsExample";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RnNombaTerminalSdkExample.app/RnNombaTerminalSdkExample";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-RnNombaTerminalActionsExample.debug.xcconfig */;
+			baseConfigurationReference = 7B9E2214ACF9CE14ADEDB485 /* Pods-RnNombaTerminalSdkExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = RnNombaTerminalActionsExample/Info.plist;
+				INFOPLIST_FILE = RnNombaTerminalSdkExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -481,7 +486,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RnNombaTerminalActionsExample;
+				PRODUCT_NAME = RnNombaTerminalSdkExample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -490,12 +495,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-RnNombaTerminalActionsExample.release.xcconfig */;
+			baseConfigurationReference = 61681CCE51B29D53F196BB6F /* Pods-RnNombaTerminalSdkExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = RnNombaTerminalActionsExample/Info.plist;
+				INFOPLIST_FILE = RnNombaTerminalSdkExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -507,7 +512,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = RnNombaTerminalActionsExample;
+				PRODUCT_NAME = RnNombaTerminalSdkExample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -517,6 +522,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -544,6 +550,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				CXX = "";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -563,6 +570,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -582,7 +591,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 			};
 			name = Debug;
 		};
@@ -590,6 +605,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CC = "";
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++20";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -617,6 +633,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				CXX = "";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
@@ -629,6 +646,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD = "";
+				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					/usr/lib/swift,
 					"$(inherited)",
@@ -647,7 +666,13 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					" ",
+				);
+				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -655,7 +680,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnNombaTerminalActionsExampleTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RnNombaTerminalSdkExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -664,7 +689,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnNombaTerminalActionsExample" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "RnNombaTerminalSdkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -673,7 +698,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnNombaTerminalActionsExample" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "RnNombaTerminalSdkExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

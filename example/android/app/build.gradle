@@ -74,9 +74,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.rnnombaterminalactionsexample"
+    namespace "com.rnnombaterminalsdkexample"
     defaultConfig {
-        applicationId "com.rnnombaterminalactionsexample"
+        applicationId "com.rnnombaterminalsdkexample"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -89,6 +89,14 @@ android {
             keyAlias 'androiddebugkey'
             keyPassword 'android'
         }
+
+        // for Nomba Max
+        // debug {
+        //     storeFile file('customtest.keystore')
+        //     storePassword 'customtestnomba001001'
+        //     keyAlias 'customtestkey'
+        //     keyPassword 'customtestnomba001001'
+        // }
     }
     buildTypes {
         debug {
