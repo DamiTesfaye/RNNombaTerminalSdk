@@ -79,7 +79,7 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
           transactionReference,
           receiptData);
         break;
-      case "card_payment_and_PBT_action":
+      case "card_payment_and_pbt_action":
         this.triggerCardAndPBT(amount, transactionReference, receiptData);
         break;
       case "print_custom_receipt_action":
