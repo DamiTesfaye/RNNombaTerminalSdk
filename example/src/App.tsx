@@ -54,6 +54,22 @@ export default function App() {
     }
   };
 
+  const onGetDeviceInfo = async () => {
+    try {
+      const res: responseMap = await handleTerminalRequest([
+        'get_device_info_action',
+      ]);
+
+      setResult(res.result);
+    } catch (e: any) {
+      if (isErrorWithMessage(e)) {
+        setResult(e.message);
+      } else {
+        setResult(e);
+      }
+    }
+  };
+
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>Nomba Terminal Actions</Text>
@@ -78,10 +94,18 @@ export default function App() {
       </View>
       <View style={styles.buttonContainer}>
         <Button
-          onPress={() => onHandleTerminalRequest('card_payment_and_PBT_action')}
+          onPress={() => onHandleTerminalRequest('card_payment_and_pbt_action')}
           title="Run Pay by Card + Transfer Action"
           color="#841584"
           accessibilityLabel="Run pay by transfer button"
+        />
+      </View>
+      <View style={styles.buttonContainer}>
+        <Button
+          onPress={() => onGetDeviceInfo()}
+          title="Get Device Info"
+          color="#841584"
+          accessibilityLabel="Run get device info button"
         />
       </View>
     </View>

@@ -18,6 +18,8 @@ import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.bridge.ReadableArray;
 import com.facebook.react.module.annotations.ReactModule;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.ToNumberPolicy;
 import com.google.gson.reflect.TypeToken;
 
 import java.util.ArrayList;
@@ -30,11 +32,17 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
   public static final String NAME = "RnNombaTerminalSdk";
   private static final int ARGS_TRANSACTION_REQUEST_CODE = 1943;
   private static final int ARGS_PRINT_RECEIPT_EVENT = 1944;
+  private static final int ARGS_GET_DEVICE_EVENT = 1945;
   private static final String AMOUNT_DATA = "amount";
   private static final String MERCHANT_TX_REF = "merchantTxRef";
   private static final String RECEIPT_OPTIONS = "receiptOptions";
   private static final String TXN_RESULT = "txnResultData";
   private static final String PRINT_RESULT = "PRINT_RESULT";
+  private static final String TERMINAL_ID = "terminalId";
+  private static final String SERIAL_NO = "serialNo";
+  private static final String DEVICE_INFO_ARGUMENTS = "deviceInfoArguments";
+  private static final String DEVICE_INFO_RESULT = "deviceInfoResult";
+  private static final String DEVICE_INFO_INTENT = "com.nomba.pro.feature.device_setup.ACTION_VIEW";
   private static final String PAY_BY_TRANSFER_INTENT = "com.nomba.pro.feature.pay_by_transfer.ACTION_VIEW";
   private static final String CARD_AND_PBT_INTENT = "com.nomba.pro.feature.payment_option.ACTION_VIEW";
   private static final String PRINT_CUSTOM_RECEIPT_INTENT = "com.nomba.pro.core.print_receipt.ACTION_VIEW";
@@ -84,6 +92,9 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
         break;
       case "print_custom_receipt_action":
         this.triggerPrintCustomReceipt(args.getString(1), args.getString(2));
+        break;
+      case "get_device_info_action":
+        this.getDeviceInfo();
         break;
       default:
         this.handleResponse("Invalid terminal action", "failed");
@@ -138,6 +149,14 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
     } catch (final Exception e) {
       this.handleError("Failed to print custom receipt", e);
     }
+  }
+
+  private void getDeviceInfo() {
+    final var intent = new Intent(DEVICE_INFO_INTENT);
+    intent.putExtra(DEVICE_INFO_ARGUMENTS, TERMINAL_ID + "," + SERIAL_NO);
+
+    Objects.requireNonNull(this.getCurrentActivity()).startActivityForResult(intent,
+      ARGS_GET_DEVICE_EVENT);
   }
 
   private Bundle createPrintReceiptBundle(final String receiptData, final String logoPath) {
@@ -223,6 +242,28 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
         }
       } else {
         RnNombaTerminalSdkModule.this.handleResponse("action failed to complete", "failed");
+      }
+    } else if (i == ARGS_GET_DEVICE_EVENT) {
+      if (i1 == Activity.RESULT_OK) {
+
+        if (intent != null) {
+          var deviceInfoResult = new HashMap<String, String>();
+          final var gson = new GsonBuilder()
+            .setObjectToNumberStrategy(ToNumberPolicy.LONG_OR_DOUBLE)
+            .create();
+          final var type = new TypeToken<HashMap<String, Object>>() {
+          }.getType();
+
+          final var resultJson = intent.getStringExtra(DEVICE_INFO_RESULT);
+
+          deviceInfoResult = gson.fromJson(resultJson, type);
+
+          final var terminalId = Objects.requireNonNull(deviceInfoResult).get(TERMINAL_ID);
+          final var serialNo = Objects.requireNonNull(deviceInfoResult).get(SERIAL_NO);
+
+          RnNombaTerminalSdkModule.this.handleResponse("Terminal ID is " + terminalId + " Serial Number is " + serialNo,
+            "success");
+        }
       }
     } else {
       RnNombaTerminalSdkModule.this.handleResponse("action failed to complete", "failed");
