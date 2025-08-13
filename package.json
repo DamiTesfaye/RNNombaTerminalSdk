@@ -77,8 +77,9 @@
     "@types/react": "^18.2.44"
   },
   "peerDependencies": {
-    "react": "*",
-    "react-native": "*"
+    "react": ">=18",
+    "react-native": ">=0.74.0",
+    "expo": ">=51"
   },
   "workspaces": [
     "example"
@@ -156,5 +157,18 @@
         }
       ]
     ]
+  },
+  "dependencies": {
+    "@expo/config-plugins": "^10.1.2"
+  },
+  "expo": {
+    "plugins": [
+      "./app.plugin.js"
+    ]
+  },
+  "peerDependenciesMeta": {
+    "expo": {
+      "optional": true
+    }
   }
 }
