@@ -79,3 +79,12 @@ const [result, setResult] = React.useState<any>();
 |Card Payments|`card_payment_action`            |[`card_payment_action`, amount, merchantTransactionReference, receiptData]            |
 |Pay by Transfer         |`pay_by_transfer_action`            |[`pay_by_transfer_action`, amount, merchantTransactionReference, receiptData]           |
 |Card Payments & Pay by Transfers          |`card_payment_and_pbt_action`|[`card_payment_and_pbt_action`, amount, merchantTransactionReference, receiptData]|
+
+## Expo (SDK 51) Support
+
+This package includes an **Expo Config Plugin** so it works in Expo managed projects. Because it contains native code, it **cannot run in the stock Expo Go app**. Use a **Development Build** for local dev or **EAS Build** for production.
+
+**Install in an Expo app**
+```bash
+expo install rn-nomba-terminal-sdk
+```
