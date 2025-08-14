@@ -3,7 +3,7 @@ const {
   createRunOncePlugin,
 } = require('@expo/config-plugins');
 
-const pkg = { name: 'rn-nomba-terminal-sdk', version: '0.1.3' };
+const pkg = { name: 'rn-nomba-terminal-sdk', version: '1.0.1' };
 
 function withNombaTerminal(config) {
   config = withAndroidManifest(config, (cfg) => {
