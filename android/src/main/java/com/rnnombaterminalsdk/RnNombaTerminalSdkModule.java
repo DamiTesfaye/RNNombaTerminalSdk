@@ -107,7 +107,7 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
                               final String receiptData) {
     try {
       final var intent = new Intent(intentAction);
-      final var formattedAmount = Integer.parseInt(amount) * 100;
+      final var formattedAmount = (int) Double.parseDouble(amount) * 100;
       intent.putExtra(AMOUNT_DATA, String.valueOf(formattedAmount));
       intent.putExtra(MERCHANT_TX_REF, transactionReference);
 
@@ -125,8 +125,8 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
                                  final String receiptData) {
     try {
       final var intent = new Intent(CARD_AND_PBT_INTENT);
-
-      final var formattedAmount = Integer.parseInt(amount) * 100;
+      
+      final var formattedAmount = (int) Double.parseDouble(amount) * 100;
       intent.putExtra(AMOUNT_DATA, String.valueOf(formattedAmount));
       intent.putExtra(MERCHANT_TX_REF, transactionReference);
       intent.putExtra(RECEIPT_OPTIONS, this.getReceiptOptions(receiptData));
