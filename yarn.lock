@@ -11658,8 +11658,12 @@ __metadata:
     turbo: ^1.10.7
     typescript: ^5.2.2
   peerDependencies:
-    react: "*"
-    react-native: "*"
+    expo: ">=51"
+    react: ">=18"
+    react-native: ">=0.74.0"
+  peerDependenciesMeta:
+    expo:
+      optional: true
   languageName: unknown
   linkType: soft
 
