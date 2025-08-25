@@ -79,11 +79,11 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
 
     switch (actionKey) {
       case "card_payment_action":
-        this.triggerPayment(CARD_PAYMENT, amount, transactionReference, receiptData);
+        this.triggerPayment(CARD_PAYMENT, Double.parseDouble(amount) * 100, transactionReference, receiptData);
         break;
       case "pay_by_transfer_action":
         this.triggerPayment(PAY_BY_TRANSFER_INTENT,
-          amount,
+          Double.parseDouble(amount),
           transactionReference,
           receiptData);
         break;
@@ -102,13 +102,12 @@ public class RnNombaTerminalSdkModule extends ReactContextBaseJavaModule impleme
   }
 
   private void triggerPayment(final String intentAction,
-                              final String amount,
+                              final Double amount,
                               final String transactionReference,
                               final String receiptData) {
     try {
       final var intent = new Intent(intentAction);
-      final var formattedAmount = Double.parseDouble(amount) * 100;
-      intent.putExtra(AMOUNT_DATA, String.valueOf(formattedAmount));
+      intent.putExtra(AMOUNT_DATA, String.valueOf(amount));
       intent.putExtra(MERCHANT_TX_REF, transactionReference);
 
       intent.putExtra(RECEIPT_OPTIONS, this.getReceiptOptions(receiptData));

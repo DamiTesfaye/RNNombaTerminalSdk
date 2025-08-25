@@ -1,6 +1,6 @@
 {
   "name": "rn-nomba-terminal-sdk",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Native module for Nomba terminal SDK actions",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
